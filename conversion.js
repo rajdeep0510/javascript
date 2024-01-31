@@ -1,13 +1,13 @@
-// let score = "33abc" //string 
-// console.log(typeof score);
+let score = "33abc" //string 
+console.log(typeof score);
 
-// let valueInNumber = Number(score) //convertsion
-// console.log(typeof score);
+let valueInNumber = Number(score) //convertsion
+console.log(typeof score);
 
-// let mix = "33abc" // mixed value both num and letters
-// let valueInMix= Number(mix)
-// console.log(typeof valueInMix);
-// console.log(valueInMix);
+let mix = "33abc" // mixed value both num and letters
+let valueInMix= Number(mix)
+console.log(typeof valueInMix);
+console.log(valueInMix);
  
  
 // when converted
