@@ -36,7 +36,7 @@ const newArray2 = myArra.splice(1, 3) // splice changes the orignial array
 console.log("C", newArray2);
  
 console.log("I am back !!!!");
-
+console.log("Copy that!!");
 
 
 
