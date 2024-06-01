@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body style="background-color: #414141; color: antiquewhite;">
+    <h2>Amazing images</h2>
+    <div>
+        <ul id="images">
+            <li><img width="200px" id = "Tree" src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630" alt="!!!"></li>
+            <li><img width="200px" id = "Eye" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT26MP9f5YdlTfN-2pikGFAXSyfPfT7l-wdhA&s" alt="!!!"></li>
+            <li><img width="200px" id = "Lapord" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnhoHDIbSi0WJkzGYr6wemnCS2OzSRkhokmA&s" alt="!!!"></li>
+            <li><img width="200px" id = "Forest" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGoMl9H9CxSfToFvUR51Z_h1ci-Qg8js-CZg&s" alt="!!!"></li>
+            <li><img width="200px" id = "tower" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS75ebrwvgVW5Ks_oLfCbG8Httf3_9g-Ynl_Q&s" alt="!!!"></li>
+            <li><a id = "link" href="https://www.google.com/">Google</a></li>
+        </ul>
+    </div>
+</body>
+<script>
+    // dont use onClick events in HTML 
+
+    
+    // document.getElementById('tower').onclick = function(){
+    //     alert('tower was clicked');
+    // } This method is also not good because not all attribtes of event can be used 
+
+
+    // document.getElementById('tower').addEventListener('click', function(e){
+    //     console.log(e); 
+
+    // TO read later
+
+
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("image was clicked ")
+    // }, false)
+
+    // document.getElementById('Eye').addEventListener('click', function(e){
+    //     console.log("eye was clicked ")
+    // }, fslse)
+
+    document.getElementById('link').addEventListener('click', function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        console.log("Google linked was clicked");
+    }, false)
+
+    
+
+</script>
+</html>
